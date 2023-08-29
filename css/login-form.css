@@ -1,0 +1,26 @@
+#login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 30px;
+  text-align: center;
+}
+/* login-form 의 모든 자식 input */
+/* Pseudo Selector */
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease-in-out;
+}
+/* Attribute selector */
+/* login-form 의 모든 자식 input의 placeholder(attribute) */
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+/* State */
+#login-form input:focus {
+  border-color: var(--yellow);
+}
