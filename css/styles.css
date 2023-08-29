@@ -1,5 +1,6 @@
 /* font 설정 */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import "reset.css";
 
 body {
   font-family: "Permanent Marker", cursive;
