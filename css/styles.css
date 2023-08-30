@@ -1,26 +1,15 @@
 /* font 설정 */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import "reset.css";
-@import "status-bar.css";
 @import "variables.css";
-@import "login-form.css";
 
+/* Components */
+@import "components/status-bar.css";
+
+/* Screens */
+@import "screens/login.css";
+
+/* styles.css에는 모든 페이지에 적용되는 스타일을 작성 */
 body {
   font-family: "Permanent Marker", cursive;
-}
-
-.welcome-header {
-  margin: 90px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-.welcome-header__text {
-  width: 55%;
-  opacity: 0.4;
 }

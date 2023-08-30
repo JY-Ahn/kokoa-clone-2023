@@ -1,3 +1,22 @@
+/* welcome-header는 only BEM을 이요해 작성 */
+.welcome-header {
+  margin: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.welcome-header__text {
+  width: 55%;
+  opacity: 0.4;
+}
+
+/* login-form은 only pseudo selector 를 이용해 작성 */
+
 #login-form {
   display: flex;
   justify-content: center;
