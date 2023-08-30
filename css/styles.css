@@ -5,6 +5,7 @@
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/navigation-bar.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -12,4 +13,5 @@
 /* styles.css에는 모든 페이지에 적용되는 스타일을 작성 */
 body {
   font-family: "Permanent Marker", cursive;
+  /* height: 1000vh; */
 }
