@@ -3,7 +3,6 @@
   justify-content: center;
   flex-direction: column;
   margin: 0px 30px;
-  text-align: center;
 }
 /* login-form 의 모든 자식 input */
 /* Pseudo Selector */
@@ -11,10 +10,15 @@
   border: none;
   padding: 15px 0px;
   font-size: 18px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
+}
+/* type="submit"을 attribute로 가지지 않는 login-form의 자식 input들에만
+border-bottom 및 transition적용 */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
+
 /* Attribute selector */
 /* login-form 의 모든 자식 input의 placeholder(attribute) */
 #login-form input::placeholder {
@@ -23,4 +27,19 @@
 /* State */
 #login-form input:focus {
   border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  font-size: 20px;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
 }
