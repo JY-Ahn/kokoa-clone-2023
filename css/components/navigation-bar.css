@@ -5,8 +5,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-
-  /* box-sizing: border-box; */
+  /* padding이 생겨도 box size가 바뀌지 않도록 설정 */
+  box-sizing: border-box;
 }
 .nav__list {
   display: flex;
@@ -17,4 +17,29 @@
 }
 .nav__link {
   color: #2e363e;
+  position: relative;
+}
+.nav__notification {
+  background-color: tomato;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.5px;
+}
+.nav__reddot {
+  background-color: tomato;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.5px;
+  /* top: -2px; */
 }
